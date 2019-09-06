@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const insuranceService = require('./insuranceService')
 
 app.use(bodyParser.json())
-app.use('/insurance',insuranceService)
+app.use('/covers',insuranceService)
 
 app.listen(3000, ()=>{
     console.log('Server is running')
